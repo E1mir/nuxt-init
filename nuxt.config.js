@@ -189,6 +189,9 @@ export default {
         ru,
         en
       }
+    },
+    vuex: {
+      syncLocale: true
     }
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
