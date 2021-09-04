@@ -22,7 +22,7 @@ export default {
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
 
   &__header, &__footer {
     flex-shrink: 0;
