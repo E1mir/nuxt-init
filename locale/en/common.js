@@ -1,3 +1,5 @@
 export default {
-  welcome: 'Welcome!'
+  welcome: 'Welcome!',
+  header: 'Header',
+  copyright: '© {year} All rights reserved'
 }
