@@ -1,0 +1,41 @@
+@import "variables";
+
+@font-face {
+  font-family: $font-name;
+  src: url("~assets/fonts/#{$font-file-name}-Regular.eot");
+  src: url("~assets/fonts/#{$font-file-name}-Regular.eot?#iefix") format("embedded-opentype"),
+  url("~assets/fonts/#{$font-file-name}-Regular.woff2") format("woff2"),
+  url("~assets/fonts/#{$font-file-name}-Regular.woff") format("woff"),
+  url("~assets/fonts/#{$font-file-name}-Regular.ttf") format("truetype"),
+  url("~assets/fonts/#{$font-file-name}-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-name;
+  src: url("~assets/fonts/#{$font-file-name}-Medium.eot");
+  src: url("~assets/fonts/#{$font-file-name}-Medium.eot?#iefix") format("embedded-opentype"),
+  url("~assets/fonts/#{$font-file-name}-Medium.woff2") format("woff2"),
+  url("~assets/fonts/#{$font-file-name}-Medium.woff") format("woff"),
+  url("~assets/fonts/#{$font-file-name}-Medium.ttf") format("truetype"),
+  url("~assets/fonts/#{$font-file-name}-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-name;
+  src: url("~assets/fonts/#{$font-file-name}-Bold.eot");
+  src: url("~assets/fonts/#{$font-file-name}-Bold.eot?#iefix") format("embedded-opentype"),
+  url("~assets/fonts/#{$font-file-name}-Bold.woff2") format("woff2"),
+  url("~assets/fonts/#{$font-file-name}-Bold.woff") format("woff"),
+  url("~assets/fonts/#{$font-file-name}-Bold.ttf") format("truetype"),
+  url("~assets/fonts/#{$font-file-name}-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
