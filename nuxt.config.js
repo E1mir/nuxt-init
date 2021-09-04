@@ -67,7 +67,16 @@ export default {
   axios: {},
   // i18n module
   i18n: {
-    locales: ['ru', 'en'],
+    locales: [
+      {
+        code: 'ru',
+        name: 'Русский'
+      },
+      {
+        code: 'en',
+        name: 'English'
+      }
+    ],
     defaultLocale: 'ru',
     detectBrowserLanguage: false,
     vueI18n: {
