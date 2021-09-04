@@ -1,7 +1,6 @@
 import en from './locale/en'
 import ru from './locale/ru'
 
-// eslint-disable-next-line no-unused-vars
 const isDev = process.env.NODE_ENV === 'development'
 
 export default {
@@ -35,10 +34,13 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
 
+  // Turn off telemetry
+  telemetry: false,
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,7 +48,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://i18n.nuxtjs.org/
-    '@nuxtjs/i18n',
+    '@nuxtjs/i18n'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -60,11 +62,35 @@ export default {
       fallbackLocale: 'ru',
       messages: {
         ru,
-        en,
+        en
       }
     }
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    /*
+     ** You can extend webpack config here
+     */
+    babel: {
+      plugins: [
+        '@babel/plugin-proposal-optional-chaining',
+        '@babel/plugin-proposal-nullish-coalescing-operator'
+      ]
+    },
+    transpile: ['lodash-es'],
+    extend (config, ctx) {},
+    // Usage of CSS module
+    loaders: {
+      scss: { sourceMap: false },
+      cssModules: {
+        modules: {
+          localIdentName: isDev
+            ? '[name]__[local]--[hash:base64:5]'
+            : '[hash:base64:12]'
+        },
+        localsConvention: 'camelCaseOnly'
+      }
+    },
+    extractCSS: !isDev ? { ignoreOrder: true } : false
   }
 }
