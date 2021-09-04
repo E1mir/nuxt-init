@@ -1,0 +1,61 @@
+/*------------------------------------*/
+/*  COLORS  */
+/*------------------------------------*/
+$color-primary: #359EFA;
+$color-background: #e8e8e8;
+$color-border: #4d4d4d;
+
+
+/*------------------------------------*/
+/*  FORM  */
+/*------------------------------------*/
+$input-height: 40px;
+$input-inner-padding: 16px;
+$input-border: 1px solid $color-border;
+$border-radius: 4px;
+
+
+/*------------------------------------*/
+/*  FONTS  */
+/*------------------------------------*/
+$font-file-name: 'Roboto';
+$font-name: 'Roboto';
+$font-primary: $font-name, sans-serif;
+
+
+/*------------------------------------*/
+/*  BREAKPOINTS  */
+/*------------------------------------*/
+$--xxs: 0;
+$--xs: 576px;
+$--sm: 768px;
+$--md: 992px;
+$--lg: 1200px;
+$--xlg: 1400px;
+
+
+/*------------------------------------*/
+/*  ELEMENTS DIMENSIONS  */
+/*------------------------------------*/
+$unit-step: 4px;
+
+
+/*------------------------------------*/
+/*  SPACINGS  */
+/*------------------------------------*/
+$spacing-default: 4px;
+$spacing-xs: calc(2 * #{$unit-step});
+$spacing-sm: calc(4 * #{$unit-step});
+$spacing-md: calc(6 * #{$unit-step});
+$spacing-lg: calc(8 * #{$unit-step});
+$spacing-xl: calc(9 * #{$unit-step});
+$spacing-xxl: calc(11 * #{$unit-step});
+
+$--gutter: 15px; // layout offset
+$--gap: 32px;
+$--gap-sm: 16px;
+
+/*------------------------------------*/
+/*  Content  */
+/*------------------------------------*/
+$content-width: 1168px;
