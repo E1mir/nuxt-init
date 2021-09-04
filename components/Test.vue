@@ -1,6 +1,6 @@
 <template>
   <h1 class="title">
-    Hello world
+    {{ $t('common.welcome') }}
   </h1>
 </template>
 
