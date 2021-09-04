@@ -1,15 +1,15 @@
 <template>
-  <Test />
+  <Welcome />
 </template>
 
 <script>
-import Test from '~/components/Test.vue'
+import Welcome from '~/components/Welcome.vue'
 
 export default {
   name: 'IndexPage',
 
   components: {
-    Test
+    Welcome
   }
 }
 </script>
