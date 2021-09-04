@@ -1,14 +1,16 @@
 <template>
   <header class="header">
-    <NuxtLink
-      :to="localePath('/')"
-      class="header__brand"
-    >
-      <img
-        src="/nuxt-logo.svg"
-        alt="Logo"
+    <div class="app-container">
+      <NuxtLink
+        :to="localePath('/')"
+        class="header__brand"
       >
-    </NuxtLink>
+        <img
+          src="/nuxt-logo.svg"
+          alt="Logo"
+        >
+      </NuxtLink>
+    </div>
   </header>
 </template>
 
@@ -23,6 +25,7 @@ export default {
   height: 70px;
   &__brand {
     img {
+      margin-top: $spacing-xs;
       max-height: 40px;
     }
   }

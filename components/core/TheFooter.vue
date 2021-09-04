@@ -1,6 +1,8 @@
 <template>
   <footer class="footer">
-    {{ $t('common.copyright', {year: currentYear}) }}
+    <div class="app-container">
+      {{ $t('common.copyright', {year: currentYear}) }}
+    </div>
   </footer>
 </template>
 
